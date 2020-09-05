@@ -43,7 +43,7 @@ void PrintExit()
 {
     cout << endl;
     cout << "-----------------" << endl;
-    cout << "--- Good byе! ---" << endl;
+    cout << "--- Good dyе! ---" << endl;
     cout << "-----------------" << endl;
     cout << endl;
 }

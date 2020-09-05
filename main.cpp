@@ -12,6 +12,7 @@ int ExeptionAge()
         cout << "Invalid age" << endl;
         cout << "Enter age: "; cin >> age;
     } while (age <= 10 || age > 80);
+
     return age;
 }
 

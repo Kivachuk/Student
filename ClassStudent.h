@@ -28,9 +28,10 @@ private:
 
 void Student::SetAge(int age)
 {
-    if (age <= 10  || age > 80) {
-        throw -1;
-    } else {
+    if (age <= 10 || age > 80) {
+        throw - 1;
+    }
+    else {
         this->age = age;
     }
 }

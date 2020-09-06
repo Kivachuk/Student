@@ -1,9 +1,9 @@
 #include <iostream>
 #include "ClassStudent.h"
 #include "CLI.h"
+#include "ExportToFile.h"
 
 using namespace std;
-
 
 int ExeptionAge()
 {
@@ -20,8 +20,8 @@ int main()
 {
     PrintWelcome();
 
-    const int size = 3;
-    Student students[size];
+    const int SIZE = 3;
+        Student students[SIZE];
 
     char symbol;
     do {
@@ -30,30 +30,28 @@ int main()
 
         switch (symbol)
         {
-            case '1':
-                break;
-            case '2':
-                AddStudents(students, size);
-                break;
-            case '3':
-                break;
-            case '4':
-                break;
-            case '5':
-                break;
-            case '6':
-                Export(students, size);
-                break;
-
-            case '0':
-                PrintExit();
-                break;
-            default:
-                PrintError("Invalid menu item");
-                break;
+        case '1':
+            break;
+        case '2':
+            AddStudents(students, SIZE);
+            break;
+        case '3':
+            break;
+        case '4':
+            break;
+        case '5':
+            break;
+        case '6':
+            Export(students, SIZE);
+            break;
+        case '0':
+            PrintExit();
+            break;
+        default:
+            PrintError("Invalid menu item");
+            break;
         }
     } while (symbol != '0');
 
     system("pause");
 }
-

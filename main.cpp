@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 int ExeptionAge()
 {
     int age;
@@ -19,6 +20,9 @@ int main()
 {
     PrintWelcome();
 
+    const int size = 3;
+    Student students[size];
+
     char symbol;
     do {
         PrintMenu();
@@ -29,6 +33,7 @@ int main()
             case '1':
                 break;
             case '2':
+                AddStudents(students, size);
                 break;
             case '3':
                 break;
@@ -36,6 +41,10 @@ int main()
                 break;
             case '5':
                 break;
+            case '6':
+                Export(students, size);
+                break;
+
             case '0':
                 PrintExit();
                 break;
